@@ -1,0 +1,19 @@
+{
+  "name": "breakfastjs.github.io",
+  "version": "1.0.0",
+  "description": "The website for BreakfastJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breakfastjs/breakfastjs.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/breakfastjs/breakfastjs.github.io/issues"
+  },
+  "homepage": "https://github.com/breakfastjs/breakfastjs.github.io#readme"
+}
