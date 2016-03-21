@@ -7,7 +7,7 @@ app.set('views', __dirname + '/views');
 
 app.get('/', function(req, res) {
 	res.status(200);
-	res.send('Welcome to BreakfastJS');
+	res.render('layout');
 });
 
 app.listen(3000);
