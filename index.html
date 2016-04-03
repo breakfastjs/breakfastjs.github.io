@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>BreakfastJS</title>
+		<meta charset='utf-8' />
+		<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1.0' />
+		<meta name='description' content='BreakfastJS is a breakfast club for people who want to learn to code.  On the last Saturday of the month, eat breakfast with new friends and learn to code with JavaScript in a welcoming and supportive.'/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/2.1.3/assets/css/emojione.min.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,greek' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="./css/style.css"/>
+	</head>
+
+	<body>
+		<header>
+			<h1><a href="#">BreakfastJS</a></h1>
+			<nav>
+				<ul>
+					<li><a href="#">Club</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Shop</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div id="intro">
+			<h2>BreakfastJS is a Saturday social breakfast club for people learning to code.</h2>
+		</div>
+
+		
+		<div id="container"> 
+			<div id="feature">
+				<h3>Eat breakfast</h3>
+				+ People learn best in a social environemtn
+			</div>
+
+
+			<div id="feature">
+				<h3>Learn JavaScript</h3>
+				+ Language of the web
+				+ Great for beginners
+				+ No fancy software to install, just a laptop with a web browser.
+			</div>
+
+
+			<div id="feature">
+				<h3>Meet New People</h3>
+				+ BreakfastJS clubs use pair programming to help you learn.
+				+ Clubs are a welcoming environment for people of all ages, backgrounds and experience levels.
+			</div>
+
+
+			<div id="feature">
+				<h3>Become a Tech Wizard</h3>
+				+ Pro developer and want to learn how to coach
+				+ Just starting out and curious about the basics
+				+ Learning for a while and want to learn with others
+				+ BreakfastJS is for you.
+			</div>
+		</div>
+	
+		<div>
+			<p>Inspired by NodeSchool, OpenTechSchool, </p>
+		</div>
+	
+		<footer>
+			<p>Some content goes here</p>
+
+			<ul>
+				<li><a href="#" title="All BreakfastJS clubs should subscribe to our Code of Conduct">Code of Conduct</a></li>
+				<li><a href="#" title="BreakfastJS credits a number of people who helped bring it to life.">Contributors</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="https://twitter.com/breakfastJS">Twitter</a></li>
+				<li><a href="https://twitter.com/search?q=%23breakfastJS&src=typd">#BreakfastJS</a></li>
+				<li><a href="https://github.com/breakfastJS">Github</a></li>
+				<li><a href="https://instagram.com/breakfastJS">Instagram</a></li>
+				<li><a href="https://facebook.com/breakfastJS">Facebook</a></li>
+			</ul>
+
+		</footer>
+		<script src="https://cdn.jsdelivr.net/emojione/2.1.3/lib/js/emojione.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		
+		<script>
+			emojione.imageType = 'svg';
+			var emojis = $('.emoji');
+			$.each(emojis, function(index, emoji){
+				emoji.innerHTML = emojione.shortnameToImage(emoji.innerText);
+			});
+		</script>
+	</body>
+</html>
