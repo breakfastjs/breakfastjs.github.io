@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>BreakfastJS</title>
+		<meta charset='utf-8' />
+		<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1.0' />
+		<meta name='description' content='BreakfastJS is a breakfast club for people who want to learn to code.  On the last Saturday of the month, eat breakfast with new friends and learn to code with JavaScript in a welcoming and supportive.'/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/2.1.3/assets/css/emojione.min.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,greek' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="./public/css/style.css"/>
+	</head>
+
+	<body>
+		<header>
+			<div id="titlebar">
+				<h1><a href="index.html">BreakfastJS</a></h1>
+				<img src="./public/img/spiral_note.svg" id="burger">
+			</div>
+
+			<div id="menu">
+				<nav>
+					<ul>
+						<li><a href="#">Club</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Shop</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+
+		<div id="container">
+			<div id="feature">
+				<h1>Code of Conduct</h2>
+				<h4 title="Too Long; Didn't Read: Basically what we're saying is...">TL;DR: Be excellent to one another, <a href="https://www.youtube.com/watch?v=BkELFSaBnc0">great waffles stick together.</a></h4><br/>
+
+				<h2>The short version</h2>
+				<p>We, as organisers of BreakfastJS, are dedicated to providing an inclusive and 
+				harassment-free community for everyone, regardless of age, sex, gender identity or
+				expression, sexual orientation, disability, physical appearance, body
+				size, race, nationality, or religious beliefs. We do not tolerate harassment of
+				community members in any form.  Anyone attending a club or joining the community online who violates these rules will be asked to leave immediately without a refund or expelled from the community at the discretion of the organisers
+				of BreakfastJS.
+				</p>
+
+				<h2>The less short version</h2>
+				<p>
+				Harassment includes offensive verbal or written comments related to sex, gender
+				identity or expression, sexual orientation, disability, physical appearance,
+				age, body size, race, nationality, or religious beliefs, deliberate
+				intimidation, threats, stalking, following, harassing photography or recording,
+				sustained disruption of talks or other events, inappropriate physical contact,
+				and unwelcome sexual attention. Sexual language and imagery is not appropriate
+				for any events at BreakfastJS clubs or in any related
+				communication channels including on Twitter, Instagram, Github & Facebook. Community members asked to stop any harassing behavior are expected to comply immediately. Sponsors and presenters are also subject to
+				the anti-harassment policy.
+
+				We also have a general policy that we do not tolerate disruptive behaviour including repeated interruption, inebriation (or similar intoxication), fighting or open aggression.
+				</p>
+
+				<h2>What to do if you have a concern?</h2>
+				<p>
+				If a community member engages in harassing behavior, the organisers of
+				BreakfastJS may take any action they deem appropriate, including
+				warning the offender or expulsion from the community. If you are being
+				harassed, notice that someone else is being harassed, or have any concerns,
+				please contact an organizer immediately.
+
+				### **Name of Nodeschool Chapter**
+
+				* organisers: **Names of organisers plus Twitter handles to get in touch**
+				* Meetup URL: **URL for meetup, FB group, etc.**
+
+				**If you have questions or feedback about this Code of Conduct please contact
+				one of the organisers.**
+				</p>
+
+				<p>
+				The organisers of the above communities developed this Code of Conduct to
+				govern their respective events and communication channels. We used [PDX
+				Python's anti-harassment policy](http://www.meetup.com/pdxpython/pages/Code_of_Conduct/)
+				and the [Geek Feminism Conference anti-harassment policy](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy) and the [Nodeschool Code of Conduct Template](https://github.com/nodeschool/organizers/blob/master/codeofconduct-template.md)
+				as a starting point.
+
+				This Code of Conduct, like its inspirations, is licensed under
+				the [Creative Commons Zero license](http://creativecommons.org/publicdomain/zero/1.0/).
+				</p>
+			</div>
+		</div>
+		<footer>
+			<p>BreakfastJS is a Saturday social breakfast club for people learning to code.<br/><br/>On the last Saturday of the month, eat breakfast with new friends, learn to code with JavaScript and join our welcoming and supportive commuinity.</p>
+
+			<div>
+				<h4></h4>
+				<ul>
+					<li><a href="conduct.html" title="All BreakfastJS clubs should subscribe to our Code of Conduct">Code of Conduct</a></li>
+					<li><a href="#" title="BreakfastJS credits a number of people who helped bring it to life.">Contributors</a></li>
+				</ul>
+			</div>
+
+			<div>
+			<h4>Join the Community</h4>
+				<ul>
+					<li><a href="https://twitter.com/breakfastJS">Twitter</a></li>
+					<li><a href="https://twitter.com/search?q=%23breakfastJS&src=typd">#BreakfastJS</a></li>
+					<li><a href="https://github.com/breakfastJS">Github</a></li>
+					<li><a href="https://instagram.com/breakfastJS">Instagram</a></li>
+					<li><a href="https://facebook.com/breakfastJS">Facebook</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>Get in touch</h4>
+				<p>The best way to contact us is through Twitter <a href="https://twitter.com/breakfastJS">@breakfastJS</a></p>
+			</div>
+
+		</footer>
+		<script src="https://cdn.jsdelivr.net/emojione/2.1.3/lib/js/emojione.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		
+		<script>
+			emojione.imageType = 'svg';
+			emojione.path
+			var emojis = $('.emoji');
+			$.each(emojis, function(index, emoji){
+				emoji.innerHTML = emojione.shortnameToImage(emoji.innerText);
+			});
+		</script>
+	</body>
+</html>

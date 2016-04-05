@@ -49,22 +49,33 @@ blockquote {
 
 header {
 	padding: 0 1em;
-	margin: 0 0 3em 0;
+	margin: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items:center;
-	background-color: #DDD;
+	flex-wrap: wrap;
+	background-color: #FFF;
 }
 
-header h1 {
-	flex-grow: 1;
-	align-self: center;
+#titlebar {
+	display: flex;
+	flex-direction:row;
+	margin: 0;
 }
+
+
+#menu {
+/*	display: none;
+*/}
+
+header h1 {
+	flex-grow: 2;
+}
+
 
 nav {
 	flex-grow: 1;
-	display: none; /* Change this with JQuery*/
+	/*display: none;*/ /* Change this with JQuery*/
 }
 
 nav ul {
@@ -84,31 +95,64 @@ nav li {
 
 footer {
 	width: 100%;
-	background-color: yellow;
-	margin-top: 3em;
+	background-color: #F6D58C;
+	margin-top: 4em;
+	padding: 1.25em;
+}
+
+footer div {
+	margin: 3.6em 0;
+}
+
+footer li {
+	margin: 1.25em auto;
 }
 
 #intro {
 	text-align: center;
 	padding: 1em;
-	margin: 1em;
+	margin-top:1em;
 	height: 100%;
+	background-image: url('../img/breakfast.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #container {
 	display: flex;
 	flex-direction:column;
-	margin: 0;
+	margin-top: 1em;
+	padding: 0 0.5em;
 }
 
 #feature {
-	margin: 2em;
+	margin: 1em;
 }
 
+#feature img {
+	min-width: 100%;
+	min-height: 100%;
+	background-color: orange;
+	margin-top: 1em;
+	border-radius: 0.25em;
+}
+
+#next {
+	margin-top: 1em;
+	text-align: center;
+	background-color: salmon;
+}
+
+#subscribe {
+	margin-top: 1em;
+	background-color: aqua;
+}
 
 .emoji {
-	font-size: 10em;
+	font-size: 1em;
 }
+
 
 /* Links */
 
@@ -134,31 +178,33 @@ a:active {
 @media (min-width: 460px) {
 	header {
 	padding: 0 1em;
-	margin: 0 0 3em 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items:center;
+/*	align-items:center;
+*/}
+
+#titlebar img {
+	display: none;
 }
 
-header h1 {
-	flex-grow: 3;
-}
 
-nav {
-	display: block;
+#menu {
+	display: flex;
+	flex-direction:column;
+	justify-content:space-between;
 }
 
 nav ul {
-	display: flex;
 	flex-direction:row;
-	flex-grow: 1;
 }
 
 nav li {
-	margin: 0 0;
 	font-size: 1.125em;
 	line-height: 1.11111111em;
+	flex-grow:1;
+	margin:1em;
+	padding-left: 1em;
 }
 
 #container {
@@ -169,14 +215,45 @@ nav li {
 
 #feature {
 	flex-grow:1;
-	flex-basis:20%;
+	flex-basis:100%;
 	background-color: #FFF;
 	padding: 0 1.25em 1.6em;
 	border-radius: 0.25em;
+	display: flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+}
+
+#feature img {
+	background-color: orange;
+	margin-top: 1em;
+	border-radius: 0.25em;
+	flex-grow:2;
+}
+
+.feature-text {
+	flex-grow:1;
 }
 
 #intro {
 	text-align: center;
-	margin: 6em;
 	height: 100%;
+	margin-top: 1em;
+}
+
+#intro h1 {
+	margin: 6em;
+}
+
+footer {
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+
+footer div {
+	flex-grow:1;
+	flex-basis:25%;
+}
 }
