@@ -131,8 +131,8 @@ footer li {
 }
 
 #feature img {
-	min-width: 100%;
-	min-height: 100%;
+	width: 100%;
+	height: 100%;
 	background-color: orange;
 	margin-top: 1em;
 	border-radius: 0.25em;
