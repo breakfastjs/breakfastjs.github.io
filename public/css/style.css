@@ -65,8 +65,8 @@ header {
 
 
 #menu {
-/*	display: none;
-*/}
+	display: none;
+}
 
 header h1 {
 	flex-grow: 2;
